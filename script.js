@@ -34,7 +34,6 @@ const game = (() => {
     let currentPlayer = 'X';
     let changePlayer = () => { 
         if(game.currentPlayer === 'X'){
-            console.log('true')
             game.currentPlayer = 'O'
         } else {game.currentPlayer = 'X'}
     }
@@ -48,6 +47,7 @@ const game = (() => {
         if (t[2] == t[5] && t[5] == t[8] && t[2] !== null ){return alert (t[2] + ' won')}
         if (t[0] == t[4] && t[4] == t[8] && t[0] !== null ){return alert (t[0] + ' won')}
         if (t[2] == t[4] && t[4] == t[6] && t[2] !== null ){return alert (t[2] + ' won')}
+        if(!gameboard.board.includes(null)){alert("it's a tie jumbo")}
     }
     let playTile = (target) => { 
         if(gameboard.board[target] === null){
