@@ -40,7 +40,6 @@ body, html {
 
 .header{
     display:grid;
-    grid-template-columns: 3em 1fr;
     padding: 2.5em;
     align-items: center;
 }
@@ -48,4 +47,10 @@ body, html {
     padding: 2.5em;
     display:grid;
     align-items: center;
+}
+.board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap:10px;
 }
